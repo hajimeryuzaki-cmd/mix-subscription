@@ -1,0 +1,79 @@
+/* Canaria Records — Colors & Type
+   ※ もしオリジナルの colors_and_type.css をお持ちなら、そちらに差し替えてください。
+   このファイルは、サイトを最低限正しく表示させるためのフォールバック版です。 */
+
+:root {
+  /* ── Layout ── */
+  --container: 1200px;
+  --container-narrow: 880px;
+
+  /* ── Spacing scale ── */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+  --s-10: 128px;
+
+  /* ── Radius ── */
+  --r-pill: 999px;
+  --r-lg: 12px;
+
+  /* ── Font sizes ── */
+  --fs-sm: 14px;
+  --fs-base: 16px;
+  --fs-md: 18px;
+  --fs-lg: 22px;
+  --fs-xl: 28px;
+  --fs-2xl: 36px;
+  --fs-3xl: 48px;
+
+  /* ── Fonts ── */
+  --font-jp: "Open Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  --font-en: "Permanent Marker", "Open Sans", sans-serif;
+  --font-mono: "SF Mono", "Menlo", monospace;
+
+  /* ── Colors (sage / paper aesthetic) ── */
+  --paper: #f6f3ec;
+  --paper-soft: #efece4;
+  --ink: #1f2420;
+
+  --sage-dark: #4a5a4a;
+  --sage-deep: #6b7d6b;
+  --sage-soft: #b6c4b1;
+  --sage-whisper: #e6ece2;
+
+  --fg-soft: #555c54;
+  --fg-mute: #8a8d86;
+
+  --border: #d9d4c8;
+  --border-soft: #e6e1d4;
+
+  /* ── Animation ── */
+  --dur: 0.25s;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ── Typography ── */
+  --lh-body: 1.75;
+}
+
+/* ── Base reset / body ── */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-jp);
+  font-size: var(--fs-base);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+.divider { height: 1px; background: var(--border-soft); border: 0; margin: 0; }
