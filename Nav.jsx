@@ -1,30 +1,52 @@
-/* global React */
-const { useState, useEffect } = React;
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canaria Records — 歌ってみたMIX サブスク</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="components.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+<div id="root"></div>
 
-function Nav() {
-  const [scrolled, setScrolled] = useState(false);
-  useEffect(() => {
-    const h = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", h);
-    return () => window.removeEventListener("scroll", h);
-  }, []);
+<script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"></script>
+
+<script type="text/babel" src="Nav.jsx"></script>
+<script type="text/babel" src="Hero.jsx"></script>
+<script type="text/babel" src="Profile.jsx"></script>
+<script type="text/babel" src="Consult.jsx"></script>
+<script type="text/babel" src="Pricing.jsx"></script>
+<script type="text/babel" src="Gear.jsx"></script>
+<script type="text/babel" src="FAQ.jsx"></script>
+<script type="text/babel" src="Contact.jsx"></script>
+
+<script type="text/babel">
+function App() {
   return (
-    <nav className={`nav ${scrolled ? "scrolled" : ""}`}>
-      <div className="wrap nav-inner">
-        <a href="index.html#top" className="nav-logo">
-          <img src="assets/mark.png" alt="" />
-          <span>Canaria Records</span>
-        </a>
-        <div className="nav-links">
-          <a href="index.html#about">エンジニア</a>
-          <a href="index.html#consult">相談</a>
-          <a href="index.html#pricing">サブスク</a>
-          <a href="single.html">単発</a>
-          <a href="index.html#gear">機材</a>
-          <a href="#contact" className="btn btn-primary">はじめる</a>
-        </div>
-      </div>
-    </nav>
+    <>
+      <Nav />
+      <Hero />
+      <hr className="divider" />
+      <Profile />
+      <Consult />
+      <Pricing />
+      <hr className="divider" />
+      <Gear />
+      <hr className="divider" />
+      <FAQ />
+      <hr className="divider" />
+      <Contact />
+      <Footer />
+    </>
   );
 }
-Object.assign(window, { Nav });
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>

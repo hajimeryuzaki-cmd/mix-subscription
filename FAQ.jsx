@@ -1,62 +1,52 @@
 /* global React */
-function FAQ() {
-  const items = [
-    {
-      q: "単発でも依頼できますか？",
-      a: <>はい、可能です。1曲だけ・お試しで依頼したい方向けに<a href="single.html">単発依頼ページ</a>をご用意しています。¥7,000〜のお値段から、サブスクと同じ品質でMIXいたします。</>
-    },
-    {
-      q: "ピッチ・タイミング補正は含まれていますか？",
-      a: "はい、月額サブスクリプションには標準でピッチ・タイミング補正が含まれます。録音テイクをそのまま送っていただければ、手作業で緻密に整えて納品します。"
-    },
-    {
-      q: "「1トラック」はどう数えますか？",
-      a: <>納品いただく音声ファイル1本＝1トラックとカウントします。たとえばメインボーカルを <strong>main01 / main02</strong> と分けて録られている場合は2トラック、それにハモリ上下を加えると合計4トラックです。<br/><br/>サブスクは<strong>1曲あたり5トラックまで</strong>、単発は<strong>3トラックまで</strong>が基本料金に込み。それを超える場合のみ1トラックにつき+¥1,000の追加料金が発生します。</>
-    },
-    {
-      q: "納期はどのくらいですか？",
-      a: "通常、データ受領から5〜10営業日を目安に納品いたします。お急ぎの場合は「お急ぎ納品（+¥2,000）」オプションで5日以内の対応も可能です。"
-    },
-    {
-      q: "リテイクや修正には対応してもらえますか？",
-      a: "はい、納品後の細かなご要望（音量バランス、エフェクト感の調整など）には1曲につき2回まで無償で対応いたします。3回目以降や大幅な方向性変更の場合は別途ご相談ください。"
-    },
-    {
-      q: "データはどのように渡せばいいですか？",
-      a: "Google DriveやDropbox、ギガファイル便など、お使いのファイル転送サービスから共有いただければOKです。WAVまたは48kHz/24bit以上の高音質ファイルを推奨しています。形式に不安があればご相談ください。"
-    },
-    {
-      q: "サブスクは途中で解約できますか？",
-      a: "はい、いつでも解約可能です。次回更新日の3日前までにご連絡いただければ、翌月以降の請求は発生しません。一度依頼を始めて合わなければすぐに止められるのでご安心ください。"
-    },
-    {
-      q: "録音環境やマイク選びの相談もできますか？",
-      a: <>はい、サブスク加入中の方は機材・収録環境のご相談を追加料金なしでお受けしています。詳しくは<a href="#consult">「相談」セクション</a>をご覧ください。</>
-    },
-    {
-      q: "初心者でも依頼して大丈夫ですか？",
-      a: "もちろん大丈夫です。「歌ってみた」を始めたばかりの方も多くご利用いただいています。録り音の質や機材についても丁寧にアドバイスしますので、安心してお任せください。"
-    },
-  ];
-
+function Contact() {
   return (
-    <section className="section" id="faq">
+    <section className="section contact" id="contact">
       <div className="wrap-n">
-        <div className="eyebrow">06 — FAQ</div>
-        <div className="head">
-          <h2>よくあるご質問</h2>
-          <p>ご依頼前のよくある疑問にお答えします。ここにない内容はお気軽にお問い合わせください。</p>
+        <div className="eyebrow" style={{justifyContent:"center"}}>07 — Contact</div>
+        <h2>まずはお気軽に、<br/>お声がけください。</h2>
+        <p>モニター枠には限りがあります。ご興味のある方はお早めに。<br/>Stripeでお申込み済みの方は、そのまま納品までスムーズに進められます。</p>
+        <div className="contact-cta">
+          <a className="btn btn-primary btn-lg" href="#">Stripeで申し込む →</a>
+          <a className="btn btn-outline btn-lg" href="#consult">まず相談する</a>
         </div>
-        <div className="faq-list">
-          {items.map((it, i) => (
-            <details className="faq-item" key={i}>
-              <summary>{it.q}</summary>
-              <div className="faq-item-body">{it.a}</div>
-            </details>
-          ))}
+        <div className="contact-alt">
+          または{" "}
+          <a href="https://x.com/ryuzakihajime" target="_blank" rel="noopener noreferrer">X</a> ・{" "}
+          <a href="https://www.instagram.com/ryuzaki_hajime/" target="_blank" rel="noopener noreferrer">Instagram</a> ・{" "}
+          <a href="#">Discord</a> ・{" "}
+          <a href="#">メール</a> からも。
         </div>
       </div>
     </section>
   );
 }
-Object.assign(window, { FAQ });
+
+function Footer() {
+  const linkStyle = { color: "var(--fg-mute)", textDecoration: "none" };
+  return (
+    <footer className="footer">
+      <div className="wrap footer-inner">
+        <a href="index.html#top" className="footer-logo">
+          <img src="assets/mark.png" alt="" />
+          <span>Canaria Records</span>
+        </a>
+        <div className="footer-meta">
+          <p style={{ margin: "0 0 4px", fontFamily: "var(--font-en)" }}>
+            © 2026 Canaria Records. All rights reserved.
+          </p>
+          <p style={{ margin: "0 0 4px" }}>
+            <a href="https://www.losstime-life.com/" target="_blank" rel="noopener noreferrer" style={linkStyle}>
+              losstime-life.com
+            </a>
+          </p>
+          <p style={{ margin: 0 }}>
+            <a href="tokushoho.html" style={linkStyle}>特定商取引法に基づく表記</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+Object.assign(window, { Contact, Footer });
