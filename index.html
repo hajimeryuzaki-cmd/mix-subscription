@@ -8,20 +8,26 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;600;700&family=Permanent+Marker&display=swap">
-
-  <link rel="stylesheet" href="colors_and_type.css?v=2">
-  <link rel="stylesheet" href="styles.css?v=2">
-  <link rel="stylesheet" href="components.css?v=2">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --font-jp: 'Noto Sans JP', sans-serif !important;
     }
-    body, h1, h2, h3, h4, p, a, span, div, li, summary, input, textarea, .btn {
+    /* 全体のフォントを少し太くし、文字間隔を広げる */
+    body, p, a, span, div, li, summary, input, textarea, .btn {
       font-family: 'Noto Sans JP', sans-serif !important;
+      font-weight: 500 !important; /* 300（細字）を500（中字）へ強制変更 */
+      letter-spacing: 0.03em !important; /* 文字の間を少し空けて視認性アップ */
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Noto Sans JP', sans-serif !important;
+      font-weight: 700 !important; /* 見出しはしっかり太く強調 */
+    }
+    /* 特に読みにくかった説明文やリストのピンポイント調整 */
+    .hero-lede, .head p, .profile-block p, .pull, .consult-item p, .price-list li, .price-note, .faq-item-body, .contact p {
+      font-size: 15px !important; /* 基本サイズを少し大きく */
+      color: #333333 !important; /* 薄いグレーを、より濃いグレーに変更してくっきりさせる */
+      line-height: 1.8 !important; /* 行間を広げて窮屈さを解消 */
     }
   </style>
 </head>
