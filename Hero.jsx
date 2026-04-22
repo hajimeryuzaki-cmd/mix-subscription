@@ -1,0 +1,24 @@
+/* global React */
+function Hero() {
+  return (
+    <section className="hero" id="top">
+      <img className="hero-mark" src="../../assets/mark.png" alt="" aria-hidden="true" />
+      <div className="wrap hero-grid">
+        <div className="monitor-tag">Monitor Period ・ 特別価格で提供中</div>
+        <h1 className="hero-title">
+          あなたの歌声に、<br />
+          <span className="soft">ずっと寄り添う</span>ミックスを。
+        </h1>
+        <p className="hero-lede">
+          Canaria Recordsの「歌ってみたMIX」月額サブスクリプション。<br />
+          同じエンジニアと、長く一緒に歌をつくっていく場所です。
+        </p>
+        <div className="hero-cta">
+          <a href="#pricing" className="btn btn-primary btn-lg">プランを見る</a>
+          <a href="#consult" className="btn btn-outline btn-lg">まずは相談する</a>
+        </div>
+      </div>
+    </section>
+  );
+}
+Object.assign(window, { Hero });
