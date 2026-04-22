@@ -1,5 +1,4 @@
 /* Canaria Records — component styles (v2, light/sage) */
-@import url("colors_and_type.css");
 
 .wrap { max-width: var(--container); margin: 0 auto; padding: 0 32px; }
 .wrap-n { max-width: var(--container-narrow); margin: 0 auto; padding: 0 32px; }
