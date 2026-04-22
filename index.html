@@ -1,24 +1,343 @@
-/* global React */
-function Hero() {
-  return (
-    <section className="hero" id="top">
-      <img className="hero-mark" src="assets/mark.png" alt="" aria-hidden="true" />
-      <div className="wrap hero-grid">
-        <div className="monitor-tag">Monitor Period ・ 特別価格で提供中</div>
-        <h1 className="hero-title">
-          あなたの歌声に、<br />
-          <span className="soft">ずっと寄り添う</span>ミックスを。
-        </h1>
-        <p className="hero-lede">
-          Canaria Recordsの「歌ってみたMIX」月額サブスクリプション。<br />
-          同じエンジニアと、長く一緒に歌をつくっていく場所です。
-        </p>
-        <div className="hero-cta">
-          <a href="#pricing" className="btn btn-primary btn-lg">プランを見る</a>
-          <a href="#consult" className="btn btn-outline btn-lg">まずは相談する</a>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canaria Records — 歌ってみたMIX サブスク</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="colors_and_type.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="components.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+
+<!-- ===== Nav ===== -->
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html#top" class="nav-logo">
+      <img src="assets/mark.png" alt="">
+      <span>Canaria Records</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#about">エンジニア</a>
+      <a href="index.html#consult">相談</a>
+      <a href="index.html#pricing">サブスク</a>
+      <a href="single.html">単発</a>
+      <a href="index.html#gear">機材</a>
+      <a href="#contact" class="btn btn-primary">はじめる</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="top">
+  <img class="hero-mark" src="assets/mark.png" alt="" aria-hidden="true">
+  <div class="wrap hero-grid">
+    <div class="monitor-tag">Monitor Period ・ 特別価格で提供中</div>
+    <h1 class="hero-title">
+      あなたの歌声に、<br>
+      <span class="soft">ずっと寄り添う</span>ミックスを。
+    </h1>
+    <p class="hero-lede">
+      Canaria Recordsの「歌ってみたMIX」月額サブスクリプション。<br>
+      同じエンジニアと、長く一緒に歌をつくっていく場所です。
+    </p>
+    <div class="hero-cta">
+      <a href="#pricing" class="btn btn-primary btn-lg">プランを見る</a>
+      <a href="#consult" class="btn btn-outline btn-lg">まずは相談する</a>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ===== Profile ===== -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="eyebrow">01 — Engineer</div>
+    <div class="profile">
+      <aside>
+        <div class="profile-photo">
+          <img src="assets/ryuzaki-portrait.jpg" alt="龍崎 一">
+        </div>
+        <div class="profile-name">龍崎 一</div>
+        <div class="profile-name-en">Ryuzaki Hajime ・ Canaria Records</div>
+        <div class="profile-tags">
+          <span class="tag">Producer</span>
+          <span class="tag">Composer</span>
+          <span class="tag">Mix Engineer</span>
+        </div>
+      </aside>
+      <div class="profile-body">
+        <div class="profile-block">
+          <h3>現役のコンポーザー／プロデューサー</h3>
+          <p>ボーカル・白井舞とのユニット「Losstime Life」で活動中。ワンマンライブの開催、定期的なフルアルバムリリースなど、現役アーティストとして第一線で音楽を続けています。</p>
+        </div>
+        <div class="profile-block">
+          <h3>ハードウェア ＋ プラグインのハイブリッド</h3>
+          <p>アウトボードと最新プラグインを組み合わせ、温かみと解像度を両立したサウンドを仕上げます。商業スタジオと同じ環境・同じ手触りで。</p>
+        </div>
+        <div class="profile-block">
+          <h3>同じ人がずっと担当する安心感</h3>
+          <p>毎回違うMIX師に頼んで、サウンドの方向性がバラバラ——というお悩みはもう不要です。</p>
+        </div>
+        <div class="pull">
+          単なる「MIX作業」じゃなくて、<strong>あなたのチャンネル全体の音の世界観を、一緒に育てていく</strong>仕事です。
         </div>
       </div>
-    </section>
-  );
-}
-Object.assign(window, { Hero });
+    </div>
+  </div>
+</section>
+
+<!-- ===== Consult ===== -->
+<section class="section" id="consult" style="background: var(--paper-soft);">
+  <div class="wrap-n">
+    <div class="eyebrow">02 — Consultation</div>
+    <div class="head">
+      <h2>
+        MIXだけじゃなくて、<br>
+        機材や収録のこと、<br>
+        なんでも聞いてください。
+      </h2>
+      <p>「このマイクで大丈夫？」「部屋鳴りが気になる」——そんな疑問こそ、仕上がりを左右します。サブスク加入中の方は、相談を追加料金なしでおつけしています。</p>
+    </div>
+    <div class="consult-grid">
+      <div class="consult-item">
+        <div class="consult-num">A</div>
+        <h3>マイク・機材の選定</h3>
+        <p>予算とジャンルから、失敗しない組合せを一緒に。</p>
+      </div>
+      <div class="consult-item">
+        <div class="consult-num">B</div>
+        <h3>オーディオI/F・DAW設定</h3>
+        <p>ゲイン、サンプルレート、モニタリング。基本から丁寧に。</p>
+      </div>
+      <div class="consult-item">
+        <div class="consult-num">C</div>
+        <h3>収録時のコツ</h3>
+        <p>立ち位置、ポップ対策、テイク選び。MIX前の録り音を底上げ。</p>
+      </div>
+      <div class="consult-item">
+        <div class="consult-num">D</div>
+        <h3>お部屋の音環境</h3>
+        <p>吸音、デッド化、反射の考え方を、写真ベースで。</p>
+      </div>
+    </div>
+    <div class="consult-how">
+      <span><strong>相談方法</strong>X（旧Twitter）DM ・ Discord ・ メール</span>
+      <span><strong>形式</strong>テキストでも通話でも</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Pricing ===== -->
+<section class="section" id="pricing">
+  <div class="wrap">
+    <div class="eyebrow">03 — Pricing</div>
+    <div class="head">
+      <h2>月額サブスクリプション</h2>
+      <p>モニター期間中の特別価格。正式リリース前の今だけの料金です。</p>
+    </div>
+
+    <div class="price-grid">
+      <div class="price">
+        <div class="price-title">ピッチ補正込みMIX ・ 1曲プラン</div>
+        <div class="price-num">¥3,000<span>/月（税込）</span></div>
+        <div class="price-sub">フルコーラス 1曲 / 月</div>
+        <ul class="price-list">
+          <li>音量バランス調整</li>
+          <li>EQ・コンプによる音作り</li>
+          <li>空間系エフェクト処理</li>
+          <li>ピッチ・タイミング補正</li>
+          <li>マスタリング</li>
+          <li>1曲あたり5トラックまで込み</li>
+          <li>機材・収録の相談つき</li>
+        </ul>
+        <div class="price-note">※ 6トラック目以降は追加料金（+¥1,000/トラック）／コーラス・ハモリ生成は別途オプション</div>
+        <a href="#contact" class="btn btn-outline" style="width: 100%; justify-content: center;">このプランで始める</a>
+      </div>
+      <div class="price price-featured">
+        <span class="price-tag">RECOMMENDED</span>
+        <div class="price-title">ピッチ補正込みMIX ・ 2曲プラン</div>
+        <div class="price-num">¥5,000<span>/月（税込）</span></div>
+        <div class="price-sub">フルコーラス 2曲 / 月</div>
+        <ul class="price-list">
+          <li>1曲プランの全内容 × 2曲</li>
+          <li>1曲あたり ¥2,500 でさらにお得</li>
+          <li>コンスタントに投稿する方に</li>
+          <li>ピッチ・タイミング補正込み</li>
+          <li>1曲あたり5トラックまで込み</li>
+          <li>機材・収録の相談つき</li>
+        </ul>
+        <div class="price-note">※ 6トラック目以降は追加料金（+¥1,000/トラック）／コーラス・ハモリ生成は別途オプション</div>
+        <a href="#contact" class="btn btn-primary" style="width: 100%; justify-content: center;">このプランで始める</a>
+      </div>
+    </div>
+
+    <div class="single-link-card">
+      <div>
+        <h4>1曲だけ試したい方へ</h4>
+        <p>継続前にまず音質を確認したい、特定の1曲だけ依頼したい方は単発依頼もご利用いただけます。</p>
+      </div>
+      <a href="single.html" class="btn btn-outline">単発依頼を見る →</a>
+    </div>
+
+    <div class="notice" style="margin-top: var(--s-6);">
+      <span class="notice-title">First-month Discount</span>
+      <strong>単発依頼から30日以内のサブスク移行で、初月¥1,000オフ。</strong><br>
+      まずは単発で音の相性を確かめてからサブスクに進めます。
+    </div>
+
+    <div style="margin-top: var(--s-9);">
+      <div class="head" style="margin-bottom: var(--s-5);">
+        <h2 style="font-size: var(--fs-lg);">追加オプション</h2>
+        <p style="font-size: var(--fs-sm);">都度払い、1曲あたりの追加料金です。</p>
+      </div>
+      <div style="max-width: 720px;">
+        <div class="opt-row">
+          <div><h4>追加トラック</h4><p>1曲あたり6トラック目以降、1本ごと（main01・main02・ハモリ等は別カウント）</p></div>
+          <div class="opt-price">+¥1,000<span>/トラック</span></div>
+        </div>
+        <div class="opt-row">
+          <div><h4>ハモリ生成＆MIX</h4><p>ハーモニートラックの生成とMIXを追加</p></div>
+          <div class="opt-price">+¥1,500<span>/曲</span></div>
+        </div>
+        <div class="opt-row">
+          <div><h4>お急ぎ納品（5日以内）</h4><p>通常納期より短縮してお届け</p></div>
+          <div class="opt-price">+¥2,000<span>/曲</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ===== Gear ===== -->
+<section class="section" id="gear" style="background: var(--paper-soft);">
+  <div class="wrap">
+    <div class="eyebrow">04 — Studio</div>
+    <div class="head">
+      <h2>使用機材</h2>
+      <p>ハードウェアの温かみと、最新プラグインの解像度。</p>
+    </div>
+    <div class="gear-grid">
+      <div>
+        <div class="gear-label">DAW</div>
+        <div class="gear-item"><span class="gear-name">Steinberg Cubase 14</span></div>
+        <div class="gear-item"><span class="gear-name">Fender Studio Pro</span></div>
+      </div>
+      <div>
+        <div class="gear-label">Outboard — Hardware</div>
+        <div class="gear-item"><span class="gear-name">Avalon Design V5</span><span class="gear-desc">Mic Pre / DI</span></div>
+        <div class="gear-item"><span class="gear-name">FMR Audio RNC1773E</span><span class="gear-desc">Compressor</span></div>
+        <div class="gear-item"><span class="gear-name">Klark Teknik EQP-KT</span><span class="gear-desc">Tube EQ</span></div>
+      </div>
+      <div>
+        <div class="gear-label">Plugins</div>
+        <div class="gear-item"><span class="gear-name">Universal Audio UAD-2</span><span class="gear-desc">1176 / LA-2A</span></div>
+        <div class="gear-item"><span class="gear-name">SSL Native</span><span class="gear-desc">Channel / Bus Comp</span></div>
+        <div class="gear-item"><span class="gear-name">Oeksound Soothe2</span><span class="gear-desc">Resonance</span></div>
+        <div class="gear-item"><span class="gear-name">Soundtheory Gullfoss</span><span class="gear-desc">Intelligent EQ</span></div>
+        <div class="gear-item"><span class="gear-name">iZotope Ozone 12</span><span class="gear-desc">Mastering</span></div>
+        <div class="gear-item"><span class="gear-name">Soundtoys / Valhalla / Weiss</span><span class="gear-desc">+ more</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ===== FAQ ===== -->
+<section class="section" id="faq">
+  <div class="wrap-n">
+    <div class="eyebrow">05 — FAQ</div>
+    <div class="head">
+      <h2>よくあるご質問</h2>
+      <p>ご依頼前のよくある疑問にお答えします。ここにない内容はお気軽にお問い合わせください。</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>単発でも依頼できますか？</summary>
+        <div class="faq-item-body">はい、可能です。1曲だけ・お試しで依頼したい方向けに<a href="single.html">単発依頼ページ</a>をご用意しています。¥7,000〜のお値段から、サブスクと同じ品質でMIXいたします。</div>
+      </details>
+      <details class="faq-item">
+        <summary>ピッチ・タイミング補正は含まれていますか？</summary>
+        <div class="faq-item-body">はい、月額サブスクリプションには標準でピッチ・タイミング補正が含まれます。録音テイクをそのまま送っていただければ、手作業で緻密に整えて納品します。</div>
+      </details>
+      <details class="faq-item">
+        <summary>「1トラック」はどう数えますか？</summary>
+        <div class="faq-item-body">納品いただく音声ファイル1本＝1トラックとカウントします。たとえばメインボーカルを <strong>main01 / main02</strong> と分けて録られている場合は2トラック、それにハモリ上下を加えると合計4トラックです。<br><br>サブスクは<strong>1曲あたり5トラックまで</strong>、単発は<strong>3トラックまで</strong>が基本料金に込み。それを超える場合のみ1トラックにつき+¥1,000の追加料金が発生します。</div>
+      </details>
+      <details class="faq-item">
+        <summary>納期はどのくらいですか？</summary>
+        <div class="faq-item-body">通常、データ受領から5〜10営業日を目安に納品いたします。お急ぎの場合は「お急ぎ納品（+¥2,000）」オプションで5日以内の対応も可能です。</div>
+      </details>
+      <details class="faq-item">
+        <summary>リテイクや修正には対応してもらえますか？</summary>
+        <div class="faq-item-body">はい、納品後の細かなご要望（音量バランス、エフェクト感の調整など）には1曲につき2回まで無償で対応いたします。3回目以降や大幅な方向性変更の場合は別途ご相談ください。</div>
+      </details>
+      <details class="faq-item">
+        <summary>データはどのように渡せばいいですか？</summary>
+        <div class="faq-item-body">Google DriveやDropbox、ギガファイル便など、お使いのファイル転送サービスから共有いただければOKです。WAVまたは48kHz/24bit以上の高音質ファイルを推奨しています。形式に不安があればご相談ください。</div>
+      </details>
+      <details class="faq-item">
+        <summary>サブスクは途中で解約できますか？</summary>
+        <div class="faq-item-body">はい、いつでも解約可能です。次回更新日の3日前までにご連絡いただければ、翌月以降の請求は発生しません。一度依頼を始めて合わなければすぐに止められるのでご安心ください。</div>
+      </details>
+      <details class="faq-item">
+        <summary>録音環境やマイク選びの相談もできますか？</summary>
+        <div class="faq-item-body">はい、サブスク加入中の方は機材・収録環境のご相談を追加料金なしでお受けしています。詳しくは<a href="#consult">「相談」セクション</a>をご覧ください。</div>
+      </details>
+      <details class="faq-item">
+        <summary>初心者でも依頼して大丈夫ですか？</summary>
+        <div class="faq-item-body">もちろん大丈夫です。「歌ってみた」を始めたばかりの方も多くご利用いただいています。録り音の質や機材についても丁寧にアドバイスしますので、安心してお任せください。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ===== Contact ===== -->
+<section class="section contact" id="contact">
+  <div class="wrap-n">
+    <div class="eyebrow" style="justify-content: center;">06 — Contact</div>
+    <h2>まずはお気軽に、<br>お声がけください。</h2>
+    <p>モニター枠には限りがあります。ご興味のある方はお早めに。<br>Stripeでお申込み済みの方は、そのまま納品までスムーズに進められます。</p>
+    <div class="contact-cta">
+      <a class="btn btn-primary btn-lg" href="#">Stripeで申し込む →</a>
+      <a class="btn btn-outline btn-lg" href="#consult">まず相談する</a>
+    </div>
+    <div class="contact-alt">
+      または <a href="https://x.com/ryuzakihajime" target="_blank" rel="noopener noreferrer">X</a> ・ <a href="https://www.instagram.com/ryuzaki_hajime/" target="_blank" rel="noopener noreferrer">Instagram</a> ・ <a href="#">Discord</a> ・ <a href="#">メール</a> からも。
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <a href="index.html#top" class="footer-logo">
+      <img src="assets/mark.png" alt="">
+      <span>Canaria Records</span>
+    </a>
+    <div class="footer-meta">
+      <p style="margin: 0 0 4px; font-family: var(--font-en);">© 2026 Canaria Records. All rights reserved.</p>
+      <p style="margin: 0 0 4px;"><a href="https://www.losstime-life.com/" target="_blank" rel="noopener noreferrer" style="color: var(--fg-mute); text-decoration: none;">losstime-life.com</a></p>
+      <p style="margin: 0;"><a href="tokushoho.html" style="color: var(--fg-mute); text-decoration: none;">特定商取引法に基づく表記</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Navのスクロール時の背景変化のみ（5行）
+  window.addEventListener('scroll', function() {
+    document.querySelector('.nav').classList.toggle('scrolled', window.scrollY > 40);
+  });
+</script>
+
+</body>
+</html>

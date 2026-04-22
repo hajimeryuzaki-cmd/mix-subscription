@@ -1,19 +1,185 @@
-# Canaria Records — 歌ってみたMIX サブスク
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>単発依頼 — Canaria Records 歌ってみたMIX</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="colors_and_type.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="components.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
 
-## ⚠️ assets フォルダの画像について
+<!-- ===== Nav ===== -->
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html#top" class="nav-logo">
+      <img src="assets/mark.png" alt="">
+      <span>Canaria Records</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#about">エンジニア</a>
+      <a href="index.html#consult">相談</a>
+      <a href="index.html#pricing">サブスク</a>
+      <a href="single.html">単発</a>
+      <a href="index.html#gear">機材</a>
+      <a href="#single-contact" class="btn btn-primary">はじめる</a>
+    </div>
+  </div>
+</nav>
 
-以下の画像は別途配置が必要です（このリポジトリには含まれていません）：
+<!-- ===== Hero ===== -->
+<section class="hero" id="top">
+  <img class="hero-mark" src="assets/mark.png" alt="" aria-hidden="true">
+  <div class="wrap hero-grid">
+    <div class="monitor-tag">One-off Service ・ 単発依頼</div>
+    <h1 class="hero-title">
+      1曲だけ、しっかり<br>
+      <span class="soft">プロ品質で</span>仕上げる。
+    </h1>
+    <p class="hero-lede">
+      継続契約なしで1曲単位でご利用いただける単発MIXプラン。<br>
+      サブスクと同じ機材・同じエンジニアで、品質はそのままに。
+    </p>
+    <div class="hero-cta">
+      <a href="#single-pricing" class="btn btn-primary btn-lg">プランを見る</a>
+      <a href="index.html#pricing" class="btn btn-outline btn-lg">月額サブスクと比較する</a>
+    </div>
+  </div>
+</section>
 
-- `assets/mark.png` — ロゴ
-- `assets/favicon.svg` — ファビコン
-- `assets/ryuzaki-portrait.jpg` — プロフィール写真
+<hr class="divider">
 
-これらが無くてもページは表示されます（画像が壊れて見えるだけ）。
+<!-- ===== Pricing ===== -->
+<section class="section" id="single-pricing">
+  <div class="wrap">
+    <div class="eyebrow">01 — Pricing</div>
+    <div class="head">
+      <h2>単発依頼 ・ 3プラン</h2>
+      <p>必要な範囲だけ、1曲単位でお選びいただけます。</p>
+    </div>
 
-## ファイル構成
+    <div class="price-grid">
+      <div class="price">
+        <div class="price-title">単発 ・ MIX</div>
+        <div class="price-num">¥7,000<span>/曲（税込）</span></div>
+        <div class="price-sub">ベーシックMIX 1曲</div>
+        <ul class="price-list">
+          <li>音量バランス調整</li>
+          <li>EQ・コンプによる音作り</li>
+          <li>空間系エフェクト処理</li>
+          <li>マスタリング</li>
+          <li>3トラックまで込み</li>
+        </ul>
+        <div class="price-note">※ ピッチ・タイミング補正は含まれません</div>
+        <a href="#single-contact" class="btn btn-outline" style="width: 100%; justify-content: center;">このプランで依頼する</a>
+      </div>
 
-- `index.html` — トップページ（サブスクプラン）
-- `single.html` — 単発依頼ページ
-- `tokushoho.html` — 特定商取引法に基づく表記
-- `*.jsx` — 各セクションのコンポーネント
-- `*.css` — スタイル
+      <div class="price price-featured">
+        <span class="price-tag">RECOMMENDED</span>
+        <div class="price-title">単発 ・ ピッチ補正込み</div>
+        <div class="price-num">¥9,000<span>/曲（税込）</span></div>
+        <div class="price-sub">ベーシックMIX + ピッチ補正 1曲</div>
+        <ul class="price-list">
+          <li>上記MIXプランの全内容</li>
+          <li>ピッチ・タイミング補正（手作業）</li>
+          <li>歌い出しから細かなニュアンスまで丁寧に</li>
+          <li>3トラックまで込み</li>
+        </ul>
+        <div class="price-note">迷ったらこちら。仕上がりの完成度が一段上がります。</div>
+        <a href="#single-contact" class="btn btn-primary" style="width: 100%; justify-content: center;">このプランで依頼する</a>
+      </div>
+
+      <div class="price">
+        <div class="price-title">単発 ・ フルパッケージ</div>
+        <div class="price-num">¥10,500<span>/曲（税込）</span></div>
+        <div class="price-sub">MIX + ピッチ補正 + ハモリ生成 1曲</div>
+        <ul class="price-list">
+          <li>ピッチ補正込みプランの全内容</li>
+          <li>ハーモニートラックの生成＆MIX</li>
+          <li>コーラスワークも含めて完パケ仕上げ</li>
+          <li>3トラックまで込み（生成ハモリは別カウント外）</li>
+        </ul>
+        <div class="price-note">ハモリも含めてお任せしたい方向けの全部入り。</div>
+        <a href="#single-contact" class="btn btn-outline" style="width: 100%; justify-content: center;">このプランで依頼する</a>
+      </div>
+    </div>
+
+    <div style="margin-top: var(--s-7); max-width: 720px;">
+      <div class="opt-row">
+        <div><h4>追加トラック</h4><p>4トラック目以降、1本ごと（main01・main02・ハモリ等は別カウント）</p></div>
+        <div class="opt-price">+¥1,000<span>/トラック</span></div>
+      </div>
+      <div class="opt-row">
+        <div><h4>お急ぎ納品（5日以内）</h4><p>通常納期より短縮してお届け</p></div>
+        <div class="opt-price">+¥2,000<span>/曲</span></div>
+      </div>
+    </div>
+
+    <div class="notice" style="margin-top: var(--s-6);">
+      <span class="notice-title">About Track Count</span>
+      「1トラック」は別ファイル単位でカウントします。たとえば <strong>main01 / main02 / ハモリ上 / ハモリ下</strong> のように送られた場合、合計4トラックです。
+    </div>
+  </div>
+</section>
+
+<!-- ===== Upgrade Notice ===== -->
+<section class="section" id="upgrade" style="background: var(--paper-soft);">
+  <div class="wrap-n">
+    <div class="eyebrow">02 — Upgrade Bonus</div>
+    <div class="notice">
+      <span class="notice-title">First-month Discount</span>
+      <strong>単発依頼から30日以内のサブスク移行で、初月¥1,000オフ。</strong><br>
+      まず単発で音の相性を確かめてから、月額プランへスムーズに移行できます。<br>
+      単発依頼時の控えメールをお持ちの方が対象です。
+    </div>
+    <div style="margin-top: var(--s-6); text-align: center;">
+      <a href="index.html#pricing" class="btn btn-outline">月額サブスクのプランを見る →</a>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ===== Contact ===== -->
+<section class="section contact" id="single-contact">
+  <div class="wrap-n">
+    <div class="eyebrow" style="justify-content: center;">03 — Contact</div>
+    <h2>まずはお気軽に、<br>お声がけください。</h2>
+    <p>ご依頼の前にご相談だけでもOKです。<br>音源の状態や仕上げの方向性について、事前に擦り合わせができます。</p>
+    <div class="contact-cta">
+      <a class="btn btn-primary btn-lg" href="#">Stripeで申し込む →</a>
+      <a class="btn btn-outline btn-lg" href="index.html#consult">まず相談する</a>
+    </div>
+    <div class="contact-alt">
+      または <a href="https://x.com/ryuzakihajime" target="_blank" rel="noopener noreferrer">X</a> ・ <a href="https://www.instagram.com/ryuzaki_hajime/" target="_blank" rel="noopener noreferrer">Instagram</a> ・ <a href="#">Discord</a> ・ <a href="#">メール</a> からも。
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <a href="index.html#top" class="footer-logo">
+      <img src="assets/mark.png" alt="">
+      <span>Canaria Records</span>
+    </a>
+    <div class="footer-meta">
+      <p style="margin: 0 0 4px; font-family: var(--font-en);">© 2026 Canaria Records. All rights reserved.</p>
+      <p style="margin: 0 0 4px;"><a href="https://www.losstime-life.com/" target="_blank" rel="noopener noreferrer" style="color: var(--fg-mute); text-decoration: none;">losstime-life.com</a></p>
+      <p style="margin: 0;"><a href="tokushoho.html" style="color: var(--fg-mute); text-decoration: none;">特定商取引法に基づく表記</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    document.querySelector('.nav').classList.toggle('scrolled', window.scrollY > 40);
+  });
+</script>
+
+</body>
+</html>
